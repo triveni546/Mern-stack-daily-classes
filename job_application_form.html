@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h1>Job Application Form</h1>
+            <label for="fn">First Name:</label>
+            <input type="text"  id="fn" maxlength="8" minlength="3" required placeholder="enter first name">
+            <br><br>
+            <label for=ln"">Last name:</label>
+            <input type="text" id="ln" maxlength="8" minlength="3" required placeholder="enter last name">
+            <br><br>
+            <labe for="email">Email:</labe>
+            <input type="email" id="email" required placeholder="enter Email">
+            <br><br>
+
+            <label for="">DOB:</label>
+            <input type="date" required placeholder="ener DOB">
+            <br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="Other">Other
+            <br><br>
+            <label for="phno">Phone No.:</label>
+            <input type="tel"  pattern="[6-9]{1}[0-9]{4}-[0-9]{5}" id="phno" required placeholder="91+">
+            <br><br>
+            <label for="state">State:</label>
+            <select>
+                <option value="AP">AP</option>
+                <option value="HYD">HYD</option>
+                <option value="UP">UP</option>
+                <option value="MP">MP</option>
+                <option value="PP">PB</option>
+            </select>
+            <br><br>
+            <label for="address">Address:</label>
+            <textarea name=""  rows="3" cols="30" id="address" placeholder="Enter full address"></textarea>
+            <br><br>
+            <label for="skills">Skills:</label>
+            <input type="checkbox" id="skills" name="skills" value="Node.js">Node.js
+            <input type="checkbox" id="skills" name="skills" value="react.js">react.js
+            <input type="checkbox" id="skills" name="skills" value="SQL">sql
+            <input type="checkbox" id="skills" name="skills" value="mangodb">mangodb
+            <input type="checkbox" id="skills" name="skills" value="CI/CD PipeLines">CI/CD Pipelines
+            <input type="checkbox" id="skills" name="skills" value="Git">Git
+            <br><br>
+            <label for="lang">Language:</label>
+            <input type="range" name="Language" value="English">English
+            <input type="range" name="Language" value="Telugu">Telugu
+            <input type="range" name="Language" value="Hindi">Hindi
+            <br><br>
+            <label for="resume">Resume:</label>
+            <input type="file">
+             <br><br>
+             <button type="submit">Submit</button>
+             <button type="cancel">Cancel</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>
