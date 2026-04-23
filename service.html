@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: mediumslateblue;
+        padding: 100px;
+      }
+
+      form {
+        width: 600px;
+        margin: auto;
+      }
+
+      fieldset {
+        background-color: rgb(188, 234, 253);
+        padding: 10px;
+        border: 3px solid black;
+        border-radius: 3px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      label {
+        display: inline-block;
+        width: auto;
+        height: auto;
+        padding: 3px;
+      }
+      button {
+        padding: 6px 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <h1>Service Request Form</h1>
+        <label for="name">Customer Name:</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter customer name"
+          required
+        />
+        <br /><br />
+        <label for="number">Customer Number:</label>
+        <input
+          type="text"
+          id="number"
+          placeholder="Enter customer number"
+          required
+        />
+        <br /><br />
+        <label for="issue">Issue Type:</label>
+        <select>
+          <option value="Select Issue">Select</option>
+          <option value="Laptop Repair">Laptop Repair</option>
+          <option value="Hardware Problem">Hardware Problem</option>
+          <option value="Software Problem">Software Problem</option>
+          <option value="Internet Issue">Internet Issue</option>
+        </select>
+        <br /><br />
+        <label for="Description">Description:</label>
+        <textarea name="Description" id="Description" required></textarea>
+        <br /><br />
+        <label for="priority">Priority:</label>
+        <input type="radio" id="low" name="priority" value="Low" required />
+        <label for="low">Low</label>
+        <input
+          type="radio"
+          id="medium"
+          name="priority"
+          value="Medium"
+          required
+        />
+        <label for="medium">Medium</label>
+        <input type="radio" id="high" name="priority" value="high" required />
+        <label for="high">High</label>
+        <br /><br />
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: cornsilk;
+    padding: 50px;
+}
+
+form {
+    width: 600px;
+    margin: auto;
+}
+
+fieldset {
+    background-color: rgb(215, 215, 248);
+    padding: 6%;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+input {
+    padding: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 200px;
+}
+
+button {
+    padding: 6px 12px;
+    
+}
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h1>User Registration Form</h1>
+            <label for="fn">Full Name:</label>
+            <input type="text"  id="fn" maxlength="8" minlength="3" required placeholder="Enter full name">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required placeholder="Enter Email">
+            <br><br>
+            <label for="psw">Password:</label>
+            <input type="password" name="password" id="psw" placeholder="Enter password" required>
+             <br><br>
+            <label for="confirmpassword"> Confirm Password:</label>
+            <input type="text" name="password" id="confirmpassword" placeholder="Enter  Confirm password" required oninput="this.setCustomValidity(this.value !== document.getElementById('psw').value ? 'Passwords do not match' : '')">
+            <br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="Other">Other
+            <br><br>
+            <label for="hobbies">Hobbies:</label>
+            <input type="checkbox" id="hobbies" name="hobbies" value="Reading">Reading
+            <input type="checkbox" id="hobbies" name="hobbies" value="Music">Sports
+            <input type="checkbox" id="hobbies" name="hobbies" value="Traveling">Traveling
+            <input type="checkbox" id="hobbies" name="hobbies" value="Sports">Sports
+            <input type="checkbox" id="hobbies" name="hobbies" value="Dancing">Dancing
+            <input type="checkbox" id="hobbies" name="hobbies" value="Cooking">Cooking
+            <br><br>
+            <label for="">Date of birth:</label>
+            <input type="date" required placeholder="ener Date of birth">
+             <br><br>
+             <button type="submit">Submit</button>
+             <button type="reset">Cancel</button>
+
+        </fieldset>
+    </form>
+</body>
+</html>

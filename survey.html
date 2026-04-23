@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: violet;
+    padding: 50px;
+}
+
+form {
+    width: 600px;
+    margin: auto;
+}
+
+fieldset {
+    background-color:mistyrose;
+    padding: 6%;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+button {
+    padding: 6px 12px;
+    
+}
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <h1>Survey Form</h1>
+            <label for="username"">User Name:</label>
+            <input type="text" name="username" id="username" placeholder="Enter username" required > 
+            <br> <br>
+            <label for="feedback" required>Feedback:</label>
+            <input type="text" name="feedback" id="feedback" rows="5" cols="30" placeholder="Your answer" required >
+            <br> <br>
+            <label for="rating">Rating:</label>
+            <input type="radio" name="rating" value="1">1
+            <input type="radio" name="rating" value="2">2
+            <input type="radio" name="rating" value="3">3
+            <input type="radio" name="rating" value="4">4
+            <input type="radio" name="rating" value="5">5
+            <br><br>
+            <label>Favorite Technology:</label>
+            <select>
+                <option value="select">Select</option>
+                <option value="mangodb">mangodb</option>
+                <option value="erpress.js">erpress.js</option>
+                <option value="node.js">node.js</option>
+                <option value="react.js">react.js</option>
+                <option value="angular.js">angular.js</option>
+                <option value="powerBI">powerBI</option>
+                <option value="SQL">SQL</option>
+                <option value="python">python</option>
+            </select>
+            <br><br>
+            <input type="checkbox" name="Subscribe otion" value="" required>Subscribe
+            <br><br>
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </fieldset>
+    </form>
+</body>
+</html>
