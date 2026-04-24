@@ -7,8 +7,8 @@
     <style>
         body {
     font-family: Arial, sans-serif;
-    background-color: violet;
-    padding: 50px;
+    background-image: linear-gradient(rgb(241, 191, 147), violet);
+    padding: 150px;
 }
 
 form {
@@ -17,10 +17,11 @@ form {
 }
 
 fieldset {
-    background-color:mistyrose;
-    padding: 6%;
-    border: 3px solid black;
-    border-radius: 3px;
+   background-color: white;
+        padding: 6%;
+        font-weight: bold;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 h1 {
@@ -33,7 +34,12 @@ label {
 }
 button {
     padding: 6px 12px;
-    
+        background-color: rgb(80, 206, 80);
+        border-radius: 0px 0px 5px 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        width: 100%;
+        padding: 10px;
 }
     </style>
 </head>
@@ -70,7 +76,6 @@ button {
             <input type="checkbox" name="Subscribe otion" value="" required>Subscribe
             <br><br>
             <button type="submit">Submit</button>
-            <button type="reset">Cancel</button>
         </fieldset>
     </form>
 </body>

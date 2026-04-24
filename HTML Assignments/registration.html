@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(rgb(241, 191, 147), violet);
+        padding: 150px;
+      }
+
+      form {
+        width: 600px;
+        margin: auto;
+      }
+
+      fieldset {
+        background-color: white;
+        padding: 6%;
+        font-weight: bold;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 30px;
+      }
+
+      label {
+        display: inline-block;
+        width: 150px;
+      }
+
+      input {
+        padding: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="date"] {
+        width: 200px;
+      }
+
+      button {
+        padding: 6px 12px;
+        background-color: rgb(80, 206, 80);
+        border-radius: 0px 0px 5px 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        width: 100%;
+        padding: 10px;
+      }
+      div{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <h1>User Registration Form</h1>
+        <label for="fn">Student Name:</label>
+        <input
+          type="text"
+          id="fn"
+          maxlength="8"
+          minlength="3"
+          required
+          placeholder="Enter Full Name"
+        />
+        <br /><br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="Enter Email" />
+        <br /><br />
+        <label for="psw">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="psw"
+          placeholder="Enter password"
+          required
+        />
+        <br /><br />
+        <label for="confirmpassword"> Confirm Password:</label>
+        <input
+          type="text"
+          name="conformpassword"
+          id="confirmpassword"
+          placeholder="Enter  Confirm password"
+          required
+          oninput="
+            this.setCustomValidity(
+              this.value !== document.getElementById('psw').value
+                ? 'Passwords do not match'
+                : '',
+            )
+          "
+        />
+        <br /><br />
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male" />Male
+        <input type="radio" name="gender" value="female" />Female
+        <input type="radio" name="gender" value="Other" />Other <br /><br />
+        <label for="hobbies">Hobbies:</label>
+        <input
+          type="checkbox"
+          id="hobbies"
+          name="hobbies"
+          value="Reading"
+        />Reading
+        <input type="checkbox" id="hobbies" name="hobbies" value="Music" />Music
+        <input
+          type="checkbox"
+          id="hobbies"
+          name="hobbies"
+          value="Traveling"
+        />Traveling
+        <input
+          type="checkbox"
+          id="hobbies"
+          name="hobbies"
+          value="Sports"
+        />Sports
+        <br><br>
+        <input
+          type="checkbox"
+          id="hobbies"
+          name="hobbies"
+          value="Dancing"
+        />Dancing
+        <input
+          type="checkbox"
+          id="hobbies"
+          name="hobbies"
+          value="Cooking"
+        />Cooking <br /><br />
+        <label for="">Date of birth:</label>
+        <input type="date" required placeholder="ener Date of birth" />
+        <br /><br /> <br>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        
+      </fieldset>
+    </form>
+  </body>
+</html>

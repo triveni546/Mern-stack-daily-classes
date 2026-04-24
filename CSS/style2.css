@@ -1,0 +1,22 @@
+label{
+    color: aliceblue;
+    font-size: 20px;
+    font-width: bold;
+}
+
+label::after{
+    content: "*";
+    color: brown;
+}
+
+label:first-of-type::before{
+    content:"🙎" ;
+}
+
+label:last-of-type::before{
+    content: "🔒";
+}
+button{
+    background-color: mediumorchid;
+    padding: 5px 10px;
+}
