@@ -123,4 +123,50 @@ types:
     hoisting:
     ----------
     ->utilizing the variables before Declaration
-    ->
+    ->hoisting is posible
+        1.variable Declaration
+        2.variable initilization
+        3.variable utilization
+        4.variable Re-initilization
+        5.variable Re-Declaration
+
+    Strings:
+    ---------
+    ->strings are group of characters
+    ->we can declare string 3 ways
+    1. ""
+    2. ''
+    3. ``  ->template string  & string interplo
+
+    stringg inbuilt functions:
+    ----------------------------
+    ->Arrays are linear data structurs used to homogenous types of data
+    ->Array size is not fixed
+
+    Ways to declare Arrays:
+    -------------------------
+    1. literal ways
+    2.using new keyword (Array Object)
+
+    Functions/methods:
+    -------------------- 
+     ->functions is the block of statements which will get execute when ever we called or invoke 
+     ->using functions we can increase code readability and code reusability
+
+     basically we have 2 types of functions:
+         1. user define functions
+               ->any functions that declared by user or programmer as per their requirements
+         2. predefine functions
+               ->predefine  functions means inbuilt functions
+
+JS  function types:
+--------------------
+1. anymous function
+2. normal function
+3. functional expression
+4. immediate invoking function/ self calling function
+5. allow function
+6. nested function
+7. higher order function
+8. callback function
+9. generator function
