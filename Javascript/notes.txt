@@ -1,2 +1,126 @@
 JavaScript:
 ------------
+->JavaScript is the scripoting language as well as programming language
+
+why we need JS:
+-----------------
+->to build the web application
+->to add functionality to the web application
+->to manipulate HTML and CSS
+->to achieve the DOM (Document object model) functionalities
+->to fetch data from server(API)  and also to send  data to server JS is required
+
+difference b/w java and JavaScript:
+-------------------------------------
+           java                                 |                       JavaScript
+--------------------------------------------    |   --------------------------------------------------
+-> java object oriented programming             |    -> JS is the scripting language as well as object
+   language                                     |       based programming language
+-> in both compiler and interpreter present     |    -> it have only interpreter      
+-> java will support multithreading             |    -> JS will support single call stack
+-> java is a immperative nature                 |    -> JS is the dynamically typed(in JS no need define 
+                                                |       the data types or data type to th variable)
+-> java is strictly typed                       |    -> Js is weekly typed
+-> java will support the interface              |    -> JS does not  support the interface
+
+Tokens:
+--------
+->tokens are the smallest unity/ elements in the JS programming
+
+Classifications:
+------------------
+1. Identifiers
+ ->Identifiers are the names given to JS code 
+ ex:variable names, fn names, class names
+ ->In the place of Identifiers we can't use keywords
+ rules:
+ ------
+ ->can't start with numbers
+ ->
+2. literals 
+  ->literals are the values given to the JS code
+  types:
+  1. string literals
+  2. numeric literals
+3. keywords
+  ->keywords are predesigned words which having it's meaning
+  ->in JS total 66 keywords present
+  ex:
+  int, char, function, float, boolean, class, const, var, let, if, else, for, while, do, continue, switch, break, default, double, exports, finally, try, catch, super, this, throw, package, public, void, null, import, get, set, abstract, assert, byte,  constant, enum, extence, delete, implement etc...
+
+4. separators
+  ->separators are used to separate the given code
+  ex:[], {}, (), ;, :, '', "", <>, `` 
+5. operators
+  ->operators used to perform operation on operands
+  types:
+  1. Assignment opperators(=, +=, *=, /=, %=)
+  2. relation operators(>, >=, <, <=)
+  3. Arthematic operators(+, -, *, /, %, **)
+  4. bitwise operators(&, |, ^)
+  5. logic operators(&&, ||, !)
+  6. unary operators(++, --)
+  7. ternary operators(condition ? expr1:expr2)
+  8. shift operators(>>, <<)
+  9. comparison operators(==, ===, !=)
+6. comments
+->comments are used to comment the given code
+types:
+1. single line comments (//)
+2. multi line comments  (/*      */)
+
+DataTypes:
+-----------
+->DataTypes represents the what type of data we storing on variables
+
+types:
+1. primitive DataTypes (immutable)
+   1. numbers
+   2. string
+   3. boolean
+   4. null
+   5. undefine
+   6. symbol
+   7. bigInt
+
+2. non-primitive DataTypes (mutable, object, de-reference)
+   1. Arrays
+   2. Objects
+   3. Functions
+   4. class type
+
+   variables:
+   ------------
+   -> variables are the named memory locations used to store data or values and it can change N number of times during execution
+       str="JavaScript"
+       str=10
+    1. variable Declaration
+    2. variable initialization
+    3. variable utilization
+    4. variable re-initialization
+    5. variable re-Declaration
+
+    in JS we define variables in 3days:
+    -------------------------------------
+    1. let  
+        -> let variables acts as like a local scop/ block scop
+        -> variable Declaration and initialization is same/ different line is posible
+        ->re-initialization is posible but re-Declaration is not posible
+        ->we can't hoist the let variables
+
+    2. var
+        ->var variables acts as like a global scop( because var present in windows object)
+        -> variable Declaration and initialization is same/ different line is posible 
+        ->re-initialization is posible and re-Declaration is not posible
+        ->we can hoist the var variables
+    3. const
+        ->const variables acts as like a final  ( because once initialization values we can't modify data/values)
+        -> variable Declaration and initialization is same/but different line is not posible 
+        ->re-initialization and re-Declaration is not posible
+        ->we can't hoist the const variables
+
+
+    hoisting:
+    ----------
+    ->utilizing the variables before Declaration
+    ->
