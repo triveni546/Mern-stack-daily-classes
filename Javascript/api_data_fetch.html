@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        img{
+            height:100px;
+            width: 100px;
+            border-radius: 8px;
+        }
+        div{
+            margin: 20px;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        div:nth-child(odd){
+            background-color: rgb(210, 172, 246);
+        }
+        ol{
+            list-style: none;
+        }
+        span{
+            font-weight: strong;
+            font-size: 12px; 
+        }
+    </style>
+  </head>
+  <body>
+    <script>
+      let apiUrl = "https://api.github.com/users";
+      let body=document.querySelector("body")
+      fetch(apiUrl)
+        .then((res) => res.json())
+        .then((users) => {
+           users.forEach((user)=>{
+             console.log(user.login, user.id);
+             let div=document.createElement("div");
+             let image=document.createElement("img");
+             let orderList=document.createElement("ol");
+             let li1=document.createElement("li");
+             let li2=document.createElement("li");
+             let li3=document.createElement("li");
+             div.appendChild(image);
+             div.appendChild(orderList);
+             orderList.appendChild(li1);
+             orderList.appendChild(li2);
+             orderList.appendChild(li3);
+             body.appendChild(div);
+             image.src=`${user.avatar_url}`
+
+             li1.innerHTML=`<span>Username: </span> ${user.login}`
+             li2.innerHTML=`<span>ID: </span>${user.id}`
+             li3.innerHTML=`<span>Profile Type: </span> ${user.user_view_type}`
+           });
+        }).catch((err) => {
+          console.log(err);
+        })
+    </script>
+  </bo
