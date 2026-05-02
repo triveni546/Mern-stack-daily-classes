@@ -195,6 +195,8 @@ OBJECTS:
         methods like prompt, alert, console(log,error,warn,info,table....),sssion storage, fetch, local storage
     https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=DOM%20IN%20JAVASCRIPT.drawio&dark=1#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1wX_N7YJu17-dNlZGfupcKyvlNTD-s39u%26export%3Ddownload#%7B%22pageId%22%3A%22w0W7gVwtxNn_7I0n7kZZ%22%7D
 
+
+
 DOM(DOCMENT OBJECT MODEL)
 -----------------------------
         ->DOM are used to manipulate HTML and CSS
@@ -203,3 +205,56 @@ DOM(DOCMENT OBJECT MODEL)
         1.attribute way
         2.property way
         3.add event listener
+
+
+
+        Loops : 
+        ----------
+    1. for loop 
+        Syntax:
+                for(initialization; condition ;increment/ decrement){
+
+                } 
+
+
+    2. while loop 
+        Syntax : 
+            while(condition){
+
+                increment/decrement;
+            }
+
+
+    3. do while loop 
+
+        Syntax : 
+
+        do{
+            increment/decrement;
+        }while(condition);
+
+    4. for-in loop 
+            ->for-in loop is used to iterate strings, arrays 
+            ->for-in loop is used to fetch only index's 
+
+            Syntax : 
+             for(variable in string/arrays){
+            
+            }
+
+    5. for-of loop 
+            ->for-of loop is used to iterate strings, arrays 
+            ->for-of loop is used to fetch only values 
+
+            Syntax : 
+             for(variable of string/arrays){
+            
+            }
+
+
+    6. forEach loop 
+        ->forEach() is Higher order function used to iterate arrays 
+        Syntax : 
+            Array.forEach((value,index,array)=>{
+            
+            })
